@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Salomon-Cookies-Sales Data</title>
+  
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/e9a11bffd6.js"></script>
+</head>
+<body>
+  <header class="top-head">
+    <div>
+      
+      <div class="top-text-container">
+        <h1>Salomon-Cookies</h1>
+        <h2>Cookies</h2>
+      </div>
+    <nav class="top">
+      <ul>
+        <li><a href="./index.html" title="Home Page">Home</a></li>
+        <li><a href="./sales.html" title="Sales Data">Sales</a></li>
+        
+		
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <section id="add-shop" class="full-width sticky-nav">
+    <div class="form">
+      <form id="add-shop-form">
+        <fieldset>
+          <legend>Add a New Store</legend>
+    
+          <label for="shopLocation">Shop Location: </label>
+          <input type="text" name="shopLocation">
+    
+          <label for="minCust">Minimum Customers per Hour: </label>
+          <input type="number" name="minCust">
+    
+          <label for="maxCust">Maximum Customers per Hour: </label>
+          <input type="number" name="maxCust">
+    
+          <label for="cookiesPerSale">Cookies per Sale</label>
+          <input type="number" name="cookiesPerSale" step="0.1">
+    
+          <button>Add a Store</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+  <section id="sales-graph" class="full-width">
+    <h3>Cookies Sold</h3>
+    <table id="cookies-sold"></table>
+  </section>
+  <script src="salesData.js"></script>
+</body>
+</html>
